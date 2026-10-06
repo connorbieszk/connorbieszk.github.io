@@ -1,5 +1,5 @@
 {
-	"name": "personal-web-site",
+	"name": "personal-website",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -13,12 +13,12 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
 	},
-	"packageManager": "pnpm@12.8.2+sha512.a5941679663d952c5f0ecc38ba98af98b4dc01b95780354f6894f2f873973cef2f7e2989d7db3ee5393938ae21f62fe06bcdf685d475ddad829a62095d2b8b11",
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@sveltejs/adapter-static": "^3.0.10",
-		"@sveltejs/kit": "^2.63.0",
-		"@sveltejs/vite-plugin-svelte": "^7.1.2",
+		"@sveltejs/adapter-static": "^4.0.0",
+		"@sveltejs/enhanced-img": "^1.0.0",
+		"@sveltejs/kit": "^3.0.0",
+		"@sveltejs/vite-plugin-svelte": "^7.2.0",
 		"@types/node": "^24",
 		"eslint": "^10.4.1",
 		"eslint-config-prettier": "^10.1.8",
@@ -27,10 +27,14 @@
 		"mdsvex": "^0.12.7",
 		"prettier": "^3.8.3",
 		"prettier-plugin-svelte": "^4.1.0",
-		"svelte": "^5.56.1",
+		"svelte": "^5.57.1",
 		"svelte-check": "^4.6.0",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.60.1",
-		"vite": "^8.0.16"
+		"vite": "^8.3.0"
+	},
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
 	}
 }
